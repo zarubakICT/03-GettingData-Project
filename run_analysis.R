@@ -30,7 +30,7 @@ col_lab <- c("subject","activity",col_lab)  # add two new labels
 # set the feature names as column names of the data set
 colnames(data) <- col_lab
 
-# subset columns mean and std (i.e. six columns starting with "mean()-X")
+# subset columns mean and std (i.e. columns including "mean()", "std()", )
 nm <- names(data)
 m <- grep("mean\\(", nm)
 s <- grep("std\\(", nm)
