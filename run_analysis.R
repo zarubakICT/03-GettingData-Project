@@ -34,7 +34,7 @@ colnames(data) <- col_lab
 nm <- names(data)
 m <- grep("mean\\(", nm)
 s <- grep("std\\(", nm)
-x <- sort(c(1,2,m,s))   # numbers of columns to subset plus 1st column
+x <- sort(c(1,2,m,s))   # numbers of columns to subset plus first two columns
 
 data_sub <- subset(data, , x)
 
